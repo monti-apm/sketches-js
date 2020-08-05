@@ -13,7 +13,7 @@ The implementation is based on the official paper: [DDSketch: A Fast and Fully-M
 ## Usage
 
 ```sh
-npm install @monti-apm/sketches-js
+npm install monti-apm-sketches-js
 ```
 
 ```js

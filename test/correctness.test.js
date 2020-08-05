@@ -1,9 +1,8 @@
-const test = require('ava');
-
+const assert = require('assert');
 const fs = require('fs');
 const path = require('path');
 
-const { DDSketch } = require('../index');
+const DDSketch = require('../index').DDSketch;
 
 // Expected quantile values computed with the official sketches-go
 // implementation.
@@ -21,7 +20,7 @@ const DATA = [
 ]
 
 
-test('Correctness', t => {
+it('Correctness', () => {
   DATA.forEach(function(o) {
     const xs = fs.readFileSync(path.resolve(__dirname, 'data', o.fn), 'utf8')
           .split(',')
@@ -35,7 +34,7 @@ test('Correctness', t => {
 
     Object.keys(o.qs).forEach((q) => {
       const v = Math.floor(sketch.quantile(q));
-      t.true(v === o.qs[q]);
+      assert.ok(v === o.qs[q]);
     });
   });
 });

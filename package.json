@@ -4,7 +4,7 @@
   "description": "An Implementation Of DDSketch, A Fast and Fully-Mergeable Quantile Sketch with Relative-Error Guarantees.",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "mocha ./test/*.js"
   },
   "keywords": [
     "ddsketch",
@@ -23,7 +23,6 @@
     "email": "npm@veldstra.org"
   },
   "devDependencies": {
-    "ava": "^3.7.0",
-    "prob.js": "^1.0.6"
+    "mocha": "^5.2.0"
   }
 }

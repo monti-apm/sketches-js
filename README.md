@@ -1,6 +1,6 @@
 # sketches-js
 
-![build status](https://circleci.com/gh/hassy/sketches-js.svg?style=svg)
+Fork of [sketches-js](https://github.com/hassy/sketches-js) to fix compatibility with older versions of Node.
 
 An implementation of [DDSketch](https://www.datadoghq.com/blog/engineering/computing-accurate-percentiles-with-ddsketch/) for Node.js.
 
@@ -13,7 +13,7 @@ The implementation is based on the official paper: [DDSketch: A Fast and Fully-M
 ## Usage
 
 ```sh
-npm install sketches-js
+npm install @monti-apm/sketches-js
 ```
 
 ```js
